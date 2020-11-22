@@ -1,0 +1,276 @@
+{
+	code: "hoe",
+	class: "ItemHoe",
+	heldTpUseAnimation: "hoe",
+	attributes: {
+		handbook: {
+			groupBy: ["hoe-*"]
+		},
+		toolrackTransformByType: {
+			"*-copper": {
+				rotation: { y: 1, z: -1 },
+				translation: { x: -0.25, y: 0.6 },
+				scale: 1.25,
+			},
+			"*-tinbronze": {
+				rotation: { y: 1, z: -1 },
+				translation: { x: -0.25, y: 0.6 },
+				scale: 1.25,
+			},
+			"*-bismuthbronze": {
+				rotation: { y: 1, z: -1 },
+				translation: { x: -0.25, y: 0.6 },
+				scale: 1.25,
+			},
+			"*-blackbronze": {
+				rotation: { y: 1, z: -1 },
+				translation: { x: -0.25, y: 0.6 },
+				scale: 1.25,
+			},
+			"*-iron": {
+				rotation: { y: 1, z: -1 },
+				translation: { x: -0.25, y: 0.6 },
+				scale: 1.25,
+			},
+			"*-gold": {
+				rotation: { y: 1, z: -1 },
+				translation: { x: -0.25, y: 0.6 },
+				scale: 1.25,
+			},
+			"*-silver": {
+				rotation: { y: 1, z: -1 },
+				translation: { x: -0.25, y: 0.6 },
+				scale: 1.25,
+			},
+			"*": {
+				rotation: { y: 1, z: -1 },
+				translation: { x: -0.35, y: 0.6 },
+				scale: 1.25,
+			}
+		}
+	},
+	variantgroups: [
+		{ code: "material", states: ["granite", "andesite", "basalt", "obsidian", "peridotite", "flint", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron" ] },
+	],
+	damagedby: ["blockbreaking", "attacking"],
+	shapeByType: {
+		"*-granite": { "base": "item/tool/hoe-stone" },
+		"*-andesite": { "base": "item/tool/hoe-stone" },
+		"*-basalt": { "base": "item/tool/hoe-stone" },
+		"*-obsidian": { "base": "item/tool/hoe-stone" },
+		"*-peridotite": { "base": "item/tool/hoe-stone" },
+		"*-flint": { "base": "item/tool/hoe-stone" },
+		"*-copper": { "base": "item/tool/hoe-copper" },
+		"*-tinbronze": { "base": "item/tool/hoe-copper" },
+		"*-bismuthbronze": { "base": "item/tool/hoe-copper" },
+		"*-blackbronze": { "base": "item/tool/hoe-copper" },
+		"*-gold": { "base": "item/tool/hoe-copper" },
+		"*-silver": { "base": "item/tool/hoe-copper" },
+		"*-iron": { "base": "item/tool/hoe-copper" }
+	},
+	heldTpHitAnimation: "breaktool",
+	texturesByType: {
+		"*-flint": {
+			"material": { "base": "block/stone/{material}" }
+		},
+		"*-copper": {
+			"material": { "base": "item/tool/material/{material}" }
+		},
+		"*-tinbronze": {
+			"material": { "base": "item/tool/material/{material}" }
+		},
+		"*-bismuthbronze": {
+			"material": { "base": "item/tool/material/{material}" }
+		},
+		"*-blackbronze": {
+			"material": { "base": "item/tool/material/{material}" }
+		},
+		"*-gold": {
+			"material": { "base": "item/tool/material/{material}" }
+		},
+		"*-silver": {
+			"material": { "base": "item/tool/material/{material}" }
+		},
+		"*-iron": {
+			"material": { "base": "item/tool/material/{material}" }
+		},
+		"*": {
+			"material": { "base": "block/stone/rock/{material}1" }
+		},
+	},
+	tool: "hoe",
+	miningspeedbytype: {
+		"hoe-stone": {
+			"soil": 2.2
+		},
+		"hoe-copper": {
+			"soil": 2.6
+		},
+		"hoe-bismuthbronze": {
+			"soil": 3.2
+		},
+		"hoe-tinbronze": {
+			"soil": 3.6
+		},
+		"hoe-gold": {
+			"soil": 3.6
+		},
+		"hoe-silver": {
+			"soil": 3.6
+		},
+		"hoe-blackbronze": {
+			"soil": 3.6
+		},
+		"hoe-iron": {
+			"soil": 4
+		},
+		"hoe-steel": {
+			"soil": 4.4
+		},
+	},
+	durabilitybytype: {
+		"hoe-granite": 30,
+		"hoe-andesite": 30,
+		"hoe-basalt": 35,
+		"hoe-obsidian": 50,
+		"hoe-peridotite": 30,
+		"hoe-flint": 40,
+		
+		"hoe-gold": 90,
+		"hoe-silver": 90,
+		"hoe-copper": 200,
+		"hoe-tinbronze": 320,
+		"hoe-bismuthbronze": 340,
+		"hoe-blackbronze": 370,
+		"hoe-iron": 550,
+		"hoe-steel": 900,
+	},
+	attackpowerbytype: {
+		"hoe-granite": 1,
+		"hoe-andesite": 1,
+		"hoe-basalt": 1,
+		"hoe-obsidian": 1,
+		"hoe-peridotite": 1,
+		"hoe-flint": 1,
+		
+		"hoe-copper": 1.25,
+		"hoe-gold": 1.5,
+		"hoe-silver": 1.5,
+		"hoe-bismuthbronze": 1.5,
+		"hoe-tinbronze": 1.75,
+		"hoe-blackbronze": 2,
+		"hoe-iron": 2.25,
+		"hoe-steel": 2.5,
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "tools": ["*"] },
+	fpHandTransform: {
+		translation: { x: 0.046875, y: 0, z: 0 },
+		rotation: { x: 15, y: 15, z: 90 },
+		scale: 2.5
+	},
+	guiTransformByType: {
+		"hoe-copper": {
+			rotate: false,
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -56, y: -127, z: -180 },
+			origin: { x: 0.35, y: 0, z: 0.55 },
+			scale: 1.43
+		},
+		"hoe-tinbronze": {
+			rotate: false,
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -56, y: -127, z: -180 },
+			origin: { x: 0.35, y: 0, z: 0.55 },
+			scale: 1.43
+		},
+		"hoe-bismuthbronze": {
+			rotate: false,
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -56, y: -127, z: -180 },
+			origin: { x: 0.35, y: 0, z: 0.55 },
+			scale: 1.43
+		},
+		"hoe-blackbronze": {
+			rotate: false,
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -56, y: -127, z: -180 },
+			origin: { x: 0.35, y: 0, z: 0.55 },
+			scale: 1.43
+		},
+		"hoe-gold": {
+			rotate: false,
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -56, y: -127, z: -180 },
+			origin: { x: 0.35, y: 0, z: 0.55 },
+			scale: 1.43
+		},
+		"hoe-silver": {
+			rotate: false,
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -56, y: -127, z: -180 },
+			origin: { x: 0.35, y: 0, z: 0.55 },
+			scale: 1.43
+		},
+		"hoe-iron": {
+			rotate: false,
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -56, y: -127, z: -180 },
+			origin: { x: 0.35, y: 0, z: 0.55 },
+			scale: 1.43
+		},
+		"*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -56, y: -127, z: -180 },
+			origin: { x: 0.59, y: 0, z: 0.55 },
+			scale: 1.66
+		}
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 3.6
+	},
+	tpHandTransformByType: {
+		"hoe-copper": {
+			translation: { x: -1, y: -0.5, z: -0.08 },
+			rotation: { x: 90, y: 0, z: -5 },
+			scale: 1
+		},
+		"hoe-tinbronze": {
+			translation: { x: -1, y: -0.5, z: -0.08 },
+			rotation: { x: 90, y: 0, z: -5 },
+			scale: 1
+		},
+		"hoe-bismuthbronze": {
+			translation: { x: -1, y: -0.5, z: -0.08 },
+			rotation: { x: 90, y: 0, z: -5 },
+			scale: 1
+		},
+		"hoe-blackbronze": {
+			translation: { x: -1, y: -0.5, z: -0.08 },
+			rotation: { x: 90, y: 0, z: -5 },
+			scale: 1
+		},
+		"hoe-gold": {
+			translation: { x: -1, y: -0.5, z: -0.08 },
+			rotation: { x: 90, y: 0, z: -5 },
+			scale: 1
+		},
+		"hoe-silver": {
+			translation: { x: -1, y: -0.5, z: -0.08 },
+			rotation: { x: 90, y: 0, z: -5 },
+			scale: 1
+		},
+		"hoe-iron": {
+			translation: { x: -1, y: -0.5, z: -0.08 },
+			rotation: { x: 90, y: 0, z: -5 },
+			scale: 1
+		},
+		"*": {
+			translation: { x: -0.8, y: -0.5, z: -0.1 },
+			rotation: { x: 90, y: 0, z: -10 },
+			scale: 1
+		},
+	}
+}

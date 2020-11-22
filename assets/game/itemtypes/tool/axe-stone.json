@@ -1,0 +1,179 @@
+{
+	code: "axe",
+	class: "ItemAxe",
+	attributes: {
+		handbook: {
+			groupBy: ["axe-*"]
+		},
+		toolrackTransform: {
+			rotation: { y: 1, z: -1 },
+			translation: { x: -0.3, y: 0.6 },
+			scale: 1.25,
+		}
+	},
+	variantgroups: [
+		{ code: "material", states: ["granite", "andesite", "basalt", "obsidian", "peridotite", "flint" ] },
+	],
+	tool: "axe",
+	damagedby: ["blockbreaking", "attacking"],
+	shape: { base: "item/tool/axe-stone" },
+	heldTpHitAnimation: "axechop",
+	texturesByType: {
+		"axe-flint": { 
+			"material": { base: "block/stone/{material}" },
+		},
+		"*": { 
+			"material": { base: "block/stone/rock/{material}1" }
+		},
+	},
+	attackRange: 2,
+	tooltierbytype: {
+		"*-granite": 1,
+		"*-andesite": 1,
+		"*-peridotite": 1,
+		"*-basalt": 1,
+		"*-obsidian": 1,
+		
+		"*-flint": 1,
+		"*-copper": 2,
+		"*-gold": 2,
+		"*-silver": 2,
+		"*-bismuthbronze": 3,
+		"*-tinbronze": 3,
+		"*-blackbronze": 3,
+		"*-iron": 4,
+		"*-steel": 5,
+	},
+	miningspeedbytype: {
+		"axe-granite": {
+			"wood": 2.6,
+			"plant": 2.2,
+			"leaves": 1.7
+		},
+		"axe-peridotite": {
+			"wood": 2.6,
+			"plant": 2.2,
+			"leaves": 1.7
+		},
+		"axe-andesite": {
+			"wood": 2.6,
+			"plant": 2.2,
+			"leaves": 1.7
+		},
+		"axe-basalt": {
+			"wood": 2.6,
+			"plant": 2.2,
+			"leaves": 1.7
+		},
+		"axe-flint": {
+			"wood": 2.8,
+			"plant": 2.2,
+			"leaves": 1.6
+		},
+		"axe-obsidian": {
+			"wood": 3.5,
+			"plant": 2.7,
+			"leaves": 2.4
+		},
+		
+		
+		"axe-copper": {
+			"wood": 5,
+			"plant": 2.8,
+			"leaves": 2.4
+		},
+		"axe-silver": {
+			"wood": 4,
+			"plant": 3.3,
+			"leaves": 3
+		},
+		"axe-gold": {
+			"wood": 4,
+			"plant": 3.3,
+			"leaves": 3
+		},
+		"axe-bismuthbronze": {
+			"wood": 5.4,
+			"plant": 3.5,
+			"leaves": 2.6
+		},
+		"axe-tinbronze": {
+			"wood": 5.8,
+			"plant": 3.8,
+			"leaves": 3
+		},
+		"axe-blackbronze": {
+			"wood": 6.3,
+			"plant": 4,
+			"leaves": 3.1
+		},
+		"axe-iron": {
+			"wood": 8,
+			"plant": 5,
+			"leaves": 3.2
+		},
+		"axe-steel": {
+			"wood": 10,
+			"plant": 6,
+			"leaves": 4
+		},
+	},
+	durabilitybytype: {
+		"axe-granite": 50,
+		"axe-andesite": 50,
+		"axe-basalt": 50,
+		"axe-peridotite": 50,
+		"axe-flint": 60,
+		"axe-obsidian": 90,
+		
+		"axe-gold": 125,
+		"axe-silver": 125,
+		"axe-copper": 250,
+		"axe-blackbronze": 750,
+		"axe-bismuthbronze": 650,
+		"axe-tinbronze": 550,
+		"axe-iron": 1100,
+		"axe-steel": 1500,
+	},
+	attackpowerbytype: {
+		"axe-granite": 0.75,
+		"axe-andesite": 0.75,
+		"axe-basalt": 0.75,
+		"axe-peridotite": 0.75,
+		"axe-obsidian": 1.5,
+		
+		"axe-flint": 1.25,
+		"axe-copper": 2,
+		"axe-bismuthbronze": 2.5,
+		"axe-gold": 2.5,
+		"axe-silver": 2.5,
+		"axe-tinbronze": 2.75,
+		"axe-blackbronze": 3,
+		"axe-iron": 3,
+		"axe-steel": 4,
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "tools": ["*"] },
+	guiTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: -89, y: 41, z: 33 },
+		origin: { x: 0.48, y: 0, z: 0.38 },
+		scale: 1.78
+	},
+	fpHandTransform: {
+		translation: { x: -0.24, y: 0, z: 0.1 },
+		rotation: { x: 15, y: 15, z: 90 },
+		scale: 2.45
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 3.4
+	},
+	tpHandTransform: {
+		translation: { x: -0.9, y: 0.01, z: -0.65 },
+		rotation: { x: 90, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 0.8
+	}
+}

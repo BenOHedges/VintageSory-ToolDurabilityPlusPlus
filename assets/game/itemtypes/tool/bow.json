@@ -1,0 +1,56 @@
+{
+	code: "bow",
+	variantgroups: [
+		{ code: "type", states: ["simple" ] },
+	],
+	class: "ItemBow",
+	maxstacksize: 1,
+	durability: 350,
+	shape: {
+		base: "item/tool/bow/{type}",
+		alternates: [
+			{ base: "item/tool/bow/{type}-charge1" },
+			{ base: "item/tool/bow/{type}-charge2" },
+			{ base: "item/tool/bow/{type}-charge3" }
+		]
+	},
+	tool: "bow",
+	creativeinventory: { "general": ["*"], "items": ["*"], "tools": ["*"] },
+	attributes: {
+		damageByType: {
+			"*-simple": 3,
+			"*-composite": 4,
+			"*-recurve": 5
+		},
+		toolrackTransform: {
+			rotation: { x: 2, y: 5, z: 0 },
+			translation: { y: 0.63 },
+			scale: 1.25,
+		}
+	},
+
+	fpHandTransform: {
+		translation: { x: 0, y: 0.5, z: 0 },
+		rotation: { x: 7, y: 1, z: 80 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 2.91
+	},
+	guiTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: -129, y: 25, z: 41 },
+		origin: { x: 0.47, y: 0, z: 0.55 },
+		scale: 1.64
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 4.8
+	},
+	tpHandTransform: {
+		translation: { x: -0.55, y: -0.04, z: -0.57 },
+		rotation: { x: 117, y: 16, z: 10 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 0.9
+	}
+}

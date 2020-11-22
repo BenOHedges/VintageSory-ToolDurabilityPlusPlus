@@ -1,0 +1,240 @@
+{
+	code: "spear",
+	class: "ItemSpear",
+	damagedby: ["attacking"],
+	tool: "spear",
+	variantgroups: [
+		{ code: "material", states: ["granite", "andesite", "basalt", "obsidian", "peridotite", "flint", "copper", "tinbronze", "bismuthbronze", "blackbronze", "ornate-gold", "ornate-silver" ] },
+	],
+	shapeByType: {
+		"spear-granite": { base: "item/tool/spear-stone" },
+		"spear-andesite": { base: "item/tool/spear-stone" },
+		"spear-basalt": { base: "item/tool/spear-stone" },
+		"spear-obsidian": { base: "item/tool/spear-stone" },
+		"spear-peridotite": { base: "item/tool/spear-stone" },
+		"spear-flint": { base: "item/tool/spear-stone" },
+		
+		"spear-copper": { base: "item/tool/spear-copper" },
+		
+		"spear-tinbronze": { base: "item/tool/spear-copper" },
+		"spear-bismuthbronze": { base: "item/tool/spear-copper" },
+		"spear-blackbronze": { base: "item/tool/spear-copper" },
+		"spear-ornate-gold": { base: "item/tool/spear-ornate-gold" },
+		"spear-ornate-silver": { base: "item/tool/spear-ornate-silver" },
+	},
+	heldTpHitAnimation: "spearhit",
+	texturesByType: {
+		"spear-granite": {
+			"material": { base: "block/stone/rock/{material}1" },
+		},
+		"spear-andesite": {
+			"material": { base: "block/stone/rock/{material}1" },
+		},
+		"spear-basalt": {
+			"material": { base: "block/stone/rock/{material}1" },
+		},
+		"spear-obsidian": {
+			"material": { base: "block/stone/rock/{material}1" },
+		},
+		"spear-peridotite": {
+			"material": { base: "block/stone/rock/{material}1" },
+		},
+		"spear-flint": {
+			"material": { base: "block/stone/{material}" },
+		},
+		"spear-ornate-*": {
+		},
+		"*": {
+			"material": { base: "item/tool/material/{material}" },
+		}
+	},
+	attackRange: 3.5,
+	attackpowerbytype: {
+		"spear-granite": 1.75,
+		"spear-andesite": 1.75,
+		"spear-peridotite": 1.75,
+		"spear-basalt": 1.75,
+		"spear-flint": 2,
+		"spear-obsidian": 2.25,
+		"spear-copper": 2.75,
+		"spear-ornate-gold": 3,
+		"spear-ornate-silver": 3,
+		"spear-bismuthbronze": 3.25,
+		"spear-tinbronze": 3.75,
+		"spear-blackbronze": 4,
+	},
+	"__comment": "Thrown damage",
+	attributes: {
+		damageByType: {
+			"*-granite": 4,
+			"*-andesite": 4,
+			"*-peridotite": 4,
+			"*-basalt": 4,
+			"*-flint": 5,
+			"*-obsidian": 5.25,
+			"*-copper": 5.75,
+			"*-ornate-gold": 6,
+			"*-ornate-silver": 6,
+			"*-bismuthbronze": 6.5,
+			"*-tinbronze": 7.5,
+			"*-blackbronze": 8,
+		},
+		spearEntityCode: "spear-{material}",
+		handbook: {
+			groupBy: ["spear-*"]
+		},
+		toolrackTransformByType: {
+			"*-copper": {
+				rotation: { x: 90, y: 1, z: -1 },
+				translation: { x: -0.2, y: 0.05, z: 0.5 },
+				scale: 1
+			},
+			"*-tinbronze": {
+				rotation: { x: 90, y: 1, z: -1 },
+				translation: { x: -0.2, y: 0.05, z: 0.5 },
+				scale: 1
+			},
+			"*-bismuthbronze": {
+				rotation: { x: 90, y: 1, z: -1 },
+				translation: { x: -0.2, y: 0.05, z: 0.5 },
+				scale: 1
+			},
+			"*-blackbronze": {
+				rotation: { x: 90, y: 1, z: -1 },
+				translation: { x: -0.2, y: 0.05, z: 0.5 },
+				scale: 1
+			},
+			"*-ornate-gold": {
+				rotation: { x: 90, y: 1, z: -1 },
+				translation: { x: -0.2, y: 0.05, z: 0.5 },
+				scale: 1
+			},
+			"*-ornate-silver": {
+				rotation: { x: 90, y: 1, z: -1 },
+				translation: { x: -0.2, y: 0.05, z: 0.5 },
+				scale: 1
+			},
+			"*": {
+				rotation: { y: 1, z: -1 },
+				translation: { x: -0.35, y: 0.5 },
+				scale: 1
+			}
+		}
+	},
+	durabilitybytype: {
+		"spear-granite": 16,
+		"spear-andesite": 16,
+		"spear-basalt": 16,
+		"spear-peridotite": 16,
+		"spear-obsidian": 45,
+		
+		"spear-flint": 32,
+		"spear-copper": 140,
+		"spear-ornate-gold": 90,
+		"spear-ornate-silver": 90,
+		"spear-tinbronze": 300,
+		"spear-bismuthbronze": 250,
+		"spear-blackbronze": 350
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "tools": ["*"] },
+	guiTransformByType: {
+		"spear-copper": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -77, y: 53, z: 25 },
+			origin: { x: 0.4, y: 0.1, z: 0.4 },
+			scale: 0.9
+		},
+		"spear-tinbronze": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -77, y: 53, z: 25 },
+			origin: { x: 0.4, y: 0.1, z: 0.4 },
+			scale: 0.9
+		},
+		"spear-bismuthbronze": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -77, y: 53, z: 25 },
+			origin: { x: 0.4, y: 0.1, z: 0.4 },
+			scale: 0.9
+		},
+		"spear-blackbronze": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -77, y: 53, z: 25 },
+			origin: { x: 0.4, y: 0.1, z: 0.4 },
+			scale: 0.9
+		},
+		"spear-ornate-gold": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -77, y: 53, z: 25 },
+			origin: { x: 0.4, y: 0.1, z: 0.4 },
+			scale: 0.9
+		},
+		"spear-ornate-silver": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -77, y: 53, z: 25 },
+			origin: { x: 0.4, y: 0.1, z: 0.4 },
+			scale: 0.9
+		},
+		"*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -77, y: 53, z: 25 },
+			origin: { x: 0.4, y: 0, z: 0.4 },
+			scale: 1.17
+		},
+	},
+	fpHandTransform: {
+		translation: { x: 0.3, y: 0.5, z: 0.16 },
+		rotation: { x: -82, y: 0, z: 85 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 2.45
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 3.4
+	},
+	tpHandTransformByType: {
+		"spear-copper": {
+			translation: { x: -1.24, y: -0.01, z: -0.56 },
+			rotation: { x: -81, y: 0, z: 0 },
+			origin: { x: 0.6, y: 0, z: 0.5 },
+			scale: 0.8
+		},
+		"spear-tinbronze": {
+			translation: { x: -1.24, y: -0.01, z: -0.56 },
+			rotation: { x: -81, y: 0, z: 0 },
+			origin: { x: 0.6, y: 0, z: 0.5 },
+			scale: 0.8
+		},
+		"spear-bismuthbronze": {
+			translation: { x: -1.24, y: -0.01, z: -0.56 },
+			rotation: { x: -81, y: 0, z: 0 },
+			origin: { x: 0.6, y: 0, z: 0.5 },
+			scale: 0.8
+		},
+		"spear-blackbronze": {
+			translation: { x: -1.24, y: -0.01, z: -0.56 },
+			rotation: { x: -81, y: 0, z: 0 },
+			origin: { x: 0.6, y: 0, z: 0.5 },
+			scale: 0.8
+		},
+		"spear-ornate-gold": {
+			translation: { x: -1.24, y: -0.01, z: -0.56 },
+			rotation: { x: -81, y: 0, z: 0 },
+			origin: { x: 0.6, y: 0, z: 0.5 },
+			scale: 0.8
+		},
+		"spear-ornate-silver": {
+			translation: { x: -1.24, y: -0.01, z: -0.56 },
+			rotation: { x: -81, y: 0, z: 0 },
+			origin: { x: 0.6, y: 0, z: 0.5 },
+			scale: 0.8
+		},
+		"*": {
+			translation: { x: -1.24, y: -0.01, z: -0.56 },
+			rotation: { x: -81, y: 0, z: 0 },
+			origin: { x: 0.5, y: 0, z: 0.5 },
+			scale: 0.8
+		},
+	}
+}

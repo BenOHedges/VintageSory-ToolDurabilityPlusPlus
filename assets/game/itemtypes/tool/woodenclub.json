@@ -1,0 +1,47 @@
+{
+	code: "woodenclub",
+	damagedby: ["blockbreaking", "attacking"],
+	variantgroups: [
+		{ code: "type", states: ["normal" ] },
+	],
+	shape: { base: "item/tool/woodenclub" },
+	heldTpHitAnimation: "breaktool",
+	textures: {
+		"wood": { base: "item/tool/material/wood" }
+	},
+	attackRange: 2,
+	durabilitybytype: {
+		"woodenclub-normal": 150,
+	},
+	attackpowerbytype: {
+		"woodenclub-normal": 1.5,
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "tools": ["*"] },
+	combustibleProps: {
+		burnTemperature: 600,
+		burnDuration: 10,
+	},	
+	fpHandTransform: {
+		translation: { x: 0.3, y: 0, z: 0 },
+		rotation: { x: 15, y: 15, z: 90 },
+		scale: 2
+	},
+	guiTransform: {
+		rotate: false,
+		translation: { x: 3, y: 4, z: 0 },
+		rotation: { x: -66, y: -134, z: 164 },
+		origin: { x: 0.5, y: 0.5, z: 0.5 },
+		scale: 2.04
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0.45, z: 0.5 },
+		scale: 3.6
+	},
+	tpHandTransform: {
+		translation: { x: -0.9, y: -0.6, z: -0.6 },
+		rotation: { x: 90, y: 1, z: 0 },
+		scale: 0.85
+	}
+}

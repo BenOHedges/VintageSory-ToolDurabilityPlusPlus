@@ -1,0 +1,80 @@
+{
+	code: "hammer",
+	class: "ItemHammer",
+	attributes: {
+		handbook: {
+			groupBy: ["hammer-*"]
+		},
+		toolrackTransform: {
+			rotation: { y: 1, z: -1 },
+			translation: { x: -0.2 },
+			scale: 1.5,
+		}
+	},
+	variantgroups: [
+		{ code: "metal", states: ["copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron" ] },
+	],
+	tool: "hammer",
+	heldTpHitAnimation: "smithing",
+	shape: { base: "item/tool/hammer" },
+	textures: {
+		"metal": { base: "block/metal/ingot/{metal}" },
+		"wood": { base: "item/tool/material/wood" } 
+	},
+	tooltierbytype: {
+		"*-copper": 2,
+		"*-gold": 2,
+		"*-silver": 2,
+		"*-bismuthbronze": 3,
+		"*-tinbronze": 3,
+		"*-blackbronze": 3,
+		"*-iron": 4,
+		"*-steel": 5,
+	},
+	durabilitybytype: {
+		"hammer-stone": 60,
+		"hammer-gold": 250,
+		"hammer-silver": 250,
+		"hammer-copper": 500,
+		"hammer-tinbronze": 900,
+		"hammer-bismuthbronze": 1100,
+		"hammer-blackbronze": 1300,
+		"hammer-iron": 2000,
+		"hammer-steel": 2600,
+	},
+	attackpowerbytype: {
+		"hammer-stone": 1,
+		"hammer-copper": 1.25,
+		"hammer-gold": 1.5,
+		"hammer-silver": 1.5,
+		"hammer-bismuthbronze": 1.5,
+		"hammer-tinbronze": 1.75,
+		"hammer-blackbronze": 2,
+		"hammer-iron": 2.25,
+		"hammer-steel": 2.5,
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "tools": ["*"] },
+	fpHandTransform: {
+		translation: { x: 0.0468, y: -0.2, z: 0 },
+		rotation: { x: 15, y: 15, z: 90 },
+		scale: 2.5
+	},
+	guiTransform: {
+		rotate: false,
+		translation: { x: 0, y: 5, z: 0 },
+		rotation: { x: -77, y: -135, z: 160 },
+		origin: { x: 0.54, y: 0.5, z: 0.48 },
+		scale: 2.6
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0.45, z: 0.5 },
+		scale: 4.5
+	},
+	tpHandTransform: {
+		translation: { x: -0.75, y: -0.48, z: -0.52 },
+		rotation: { x: 90, y: 1, z: 0 },
+		scale: 1
+	}
+}
